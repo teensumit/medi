@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/purple_700"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/imageview" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/hello_guest"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/imageview"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/textview"/>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="15sp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/imageview_1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_location"
+        android:layout_below="@id/imageview"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/imageview" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="@string/here_pincode"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/imageview_1"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/phone"
+        android:layout_toStartOf="@id/imageview_2"/>
+    <ImageView
+        android:id="@+id/imageview_2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_down"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/textview"
+        android:contentDescription="@string/imageview" />
+
+</RelativeLayout>

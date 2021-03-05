@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/n_order_medicine"
+        android:title="@string/order_medicine"
+        android:icon="@drawable/ic_order_med"
+        android:orderInCategory="1" />
+    <item android:id="@+id/n_order_by_prescription"
+        android:title="@string/order_by_prescription"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_order_by_prescription"/>
+    <item android:id="@+id/n_reorder_medicine"
+        android:title="@string/reorder_medicine"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_reorder_med"/>
+    <item android:id="@+id/n_household_supplies"
+        android:title="@string/household_supplies"
+        android:icon="@drawable/ic_household"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/n_health_record"
+        android:title="@string/health_records"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_health_record"/>
+    <item android:id="@+id/n_buy_again"
+        android:title="@string/buy_again"
+        android:orderInCategory="1" />
+    <item android:id="@+id/n_my_lab_booking"
+        android:title="@string/my_lab_booking"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_my_lab_booking"/>
+    <item android:id="@+id/n_order"
+        android:title="@string/order"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_order"/>
+    <item android:id="@+id/n_return"
+        android:title="@string/return_"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/n_review_products"
+        android:title="@string/review_products"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_review_products"/>
+    <item android:id="@+id/n_rate_us"
+        android:title="@string/rate_us"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_rate_us"/>
+    <item android:id="@+id/n_request_a_product"
+        android:title="@string/request_a_product"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_request_produc"/>
+    <item android:id="@+id/n_Feedback"
+        android:title="@string/feedback"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_feedback"/>
+    <item android:id="@+id/n_share_in"
+        android:title="@string/share_in"
+        android:icon="@drawable/ic_share_in"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/n_offer_products"
+        android:title="@string/offer_products"
+        android:icon="@drawable/ic_offer_product"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/n_legal_about"
+        android:title="@string/legal_amp_about"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_ilegal_and_about">
+        <menu>
+            <item android:id="@+id/n_privacy_policy"
+                android:title="@string/privacy_policy"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_disclaimer"
+                android:title="@string/disclaimer"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_t_and_c"
+                android:title="@string/terms_and_conditions"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_about_us"
+                android:title="@string/about_us"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_delivery"
+                android:title="@string/delivery"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_faq"
+                android:title="@string/faq"
+                android:icon="@drawable/ic_right" />
+            <item android:id="@+id/n_return_cancellation"
+                android:title="@string/return_cancellation_and_refund_policy"
+                android:icon="@drawable/ic_right" />
+
+        </menu>
+
+    </item>
+
+</menu>
