@@ -9,20 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SwaasthyaSetu">
+        <activity android:name=".cart.CartActivity"></activity>
+        <activity android:name=".notify.NotifyActivity" />
         <activity
-            android:name="com.cheetah.setu.auth.ui.login.LoginActivity"
+            android:name=".auth.ui.login.LoginActivity"
             android:label="@string/title_activity_login"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.cheetah.setu.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.SwaasthyaSetu.full"/>
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.cheetah.setu.splash.FirstActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.SwaasthyaSetu.full"/>
-        <activity android:name="com.cheetah.setu.splash.SplashActivity"
-            android:theme="@style/Theme.SwaasthyaSetu.full"
-            android:screenOrientation="portrait">
+            android:theme="@style/Theme.SwaasthyaSetu.full" />
+        <activity
+            android:name=".splash.FirstActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SwaasthyaSetu.full" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SwaasthyaSetu.full">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

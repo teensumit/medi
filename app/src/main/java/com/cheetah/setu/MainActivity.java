@@ -3,17 +3,26 @@ package com.cheetah.setu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.cheetah.setu.account.ProfileFragment;
+import com.cheetah.setu.cart.CartActivity;
 import com.cheetah.setu.home.Home;
 import com.cheetah.setu.main.Func;
+import com.cheetah.setu.notify.NotifyActivity;
 import com.cheetah.setu.service.ServiceFragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements
     BottomNavigationView bottomNavigationView;
 
     FloatingActionButton floatingActionButton;
+
+    int CALLREQUEST = 12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,13 +70,16 @@ public class MainActivity extends AppCompatActivity implements
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.call:
-                        Func.showToast(MainActivity.this, "Call");
+                        doCall();
+                        //Func.showToast(MainActivity.this, "Call");
                         return true;
                     case R.id.notification:
-                        Func.showToast(MainActivity.this, "Notification");
+                        gotoNotification();
+                        //Func.showToast(MainActivity.this, "Notification");
                         return true;
                     case R.id.cart:
-                        Func.showToast(MainActivity.this, "Cart");
+                        gotoCart();
+                        //Func.showToast(MainActivity.this, "Cart");
                         return true;
 
                 }
@@ -79,10 +93,11 @@ public class MainActivity extends AppCompatActivity implements
                 switch (item.getItemId()){
                     case R.id.home:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Home()).commit();
-                        Func.showToast(MainActivity.this, "Home");
+                        //Func.showToast(MainActivity.this, "Home");
                         return true;
                     case R.id.you:
-                        Func.showToast(MainActivity.this, "You");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, new ProfileFragment()).commit();
+                        //Func.showToast(MainActivity.this, "You");
                         return true;
                     case R.id.order:
                         Func.showToast(MainActivity.this, "Order");
@@ -97,6 +112,45 @@ public class MainActivity extends AppCompatActivity implements
         });
 
     }
+
+    private void doCall() {
+        int checkPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+        if (checkPermission != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, CALLREQUEST);
+        } else {
+            String uri = "tel:"+"+917004776271";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse(uri));
+            startActivity(intent);
+        }
+
+    }
+
+    private void gotoCart() {
+        startActivity(new Intent(this, CartActivity.class));
+    }
+
+    private void gotoNotification() {
+        startActivity(new Intent(this, NotifyActivity.class));
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        //super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode){
+            case 12: {
+                if (grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    String uri = "tel:"+"Num";
+                    Intent intent = new Intent(Intent.ACTION_CALL);
+                    intent.setData(Uri.parse(uri));
+                    startActivity(intent);
+                } else {
+
+                }
+                return;
+            }
+        }
+    }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
