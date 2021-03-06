@@ -23,6 +23,7 @@ import com.cheetah.setu.cart.CartActivity;
 import com.cheetah.setu.home.Home;
 import com.cheetah.setu.main.Func;
 import com.cheetah.setu.notify.NotifyActivity;
+import com.cheetah.setu.order.OrderFragment;
 import com.cheetah.setu.service.ServiceFragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -100,7 +101,8 @@ public class MainActivity extends AppCompatActivity implements
                         //Func.showToast(MainActivity.this, "You");
                         return true;
                     case R.id.order:
-                        Func.showToast(MainActivity.this, "Order");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, new OrderFragment()).commit();
+                        //Func.showToast(MainActivity.this, "Order");
                         return true;
                     case R.id.service:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame, new ServiceFragment()).commit();
@@ -118,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements
         if (checkPermission != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, CALLREQUEST);
         } else {
-            String uri = "tel:"+"+917004776271";
+            String uri = "tel:"+"+g";
             Intent intent = new Intent(Intent.ACTION_CALL);
             intent.setData(Uri.parse(uri));
             startActivity(intent);
