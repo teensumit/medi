@@ -48,10 +48,20 @@
     <string name="fab">fab</string>
     <string name="health_records">Health Records</string>
     <string name="my_lab_booking">My Lab Booking</string>
-
     <string name="health_record">Health Record</string>
+
     <string name="no_notification_at_the_moment">No <b>Notification</b> at the moment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="diet_clinic">Diet Clinic</string>
+    <string name="dnavita">DNAVITE</string>
+    <string name="generic_medicines">Generic Medicines</string>
+    <string name="consuilt_doctor_online">Consuilt Doctor Online</string>
+    <string name="medicine_subsitute">Medicine And Substitute</string>
+    <string name="read_health">Read Health Articles </string>
+    <string name="listen_helth">Listen Health Articles</string>
+
+
 
 </resources>
