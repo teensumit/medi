@@ -1,7 +1,7 @@
 
 # Medi Project Development
 
-# Pulsar changed this content
+# Pulsar has changed this content
 
 # Medi
 ## Ecommerce project
