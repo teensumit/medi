@@ -48,4 +48,7 @@
     <string name="fab">fab</string>
     <string name="health_records">Health Records</string>
     <string name="my_lab_booking">My Lab Booking</string>
+
+    <string name="health_record">Health Record</string>
+
 </resources>

@@ -14,6 +14,7 @@ import android.view.View;
 
 import com.cheetah.setu.home.Home;
 import com.cheetah.setu.main.Func;
+import com.cheetah.setu.service.ServiceFragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.home:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, new Home()).commit();
                         Func.showToast(MainActivity.this, "Home");
                         return true;
                     case R.id.you:
@@ -86,7 +88,8 @@ public class MainActivity extends AppCompatActivity implements
                         Func.showToast(MainActivity.this, "Order");
                         return true;
                     case R.id.service:
-                        Func.showToast(MainActivity.this, "Services");
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, new ServiceFragment()).commit();
+                        //Func.showToast(MainActivity.this, "Services");
                         return true;
                 }
                 return false;
