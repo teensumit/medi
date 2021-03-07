@@ -82,6 +82,16 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(timer != null) {
+            timer.cancel();
+            timer.purge();
+            timer = null;
+        }
+    }
+
     private void gotoMain() {
         startActivity(new Intent(this, MainActivity.class));
         finish();
