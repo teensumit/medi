@@ -18,9 +18,9 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_health_records"
                 android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -35,12 +35,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
+
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!-- Diet clint-->
 
         <LinearLayout
@@ -51,9 +53,9 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_diet_clinic"
                 android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -68,12 +70,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
+
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--  DNAVITY-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,9 +87,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_dnavita"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,7 +104,8 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -114,9 +120,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_generic_medecines"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,12 +137,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!-- consuilt-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -145,9 +153,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_consult_doctor_online"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -161,12 +170,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--  Medicinne-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,9 +186,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_medicine_substitute"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -192,12 +203,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--Read Helth-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -207,9 +219,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_read_health_articles"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,12 +236,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--Listen helth-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -238,9 +252,10 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_listen_health_articales"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -254,12 +269,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--Health tools-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -269,13 +285,14 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="#f00"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health_record"
+                android:text="@string/health_tools"
                 android:layout_marginStart="20dp"
                 android:textSize="15sp"/>
             <Space
@@ -285,12 +302,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--Symptom-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -300,13 +318,14 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_symptoms_checker"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health_record"
+                android:text="@string/symptom_checker"
                 android:layout_marginStart="20dp"
                 android:textSize="15sp"/>
             <Space
@@ -316,12 +335,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
         <!--Personify-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -331,13 +351,14 @@
             android:paddingHorizontal="13dp"
             android:paddingVertical="10dp">
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="#f00"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="#f00"
+                android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health_record"
+                android:text="@string/personify"
                 android:layout_marginStart="20dp"
                 android:textSize="15sp"/>
             <Space
@@ -347,22 +368,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_ser_arrow"/>
+                android:src="@drawable/ic_ser_arrow"
+                android:contentDescription="@string/imageview"/>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="#000"/>
+            android:background="@color/border"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

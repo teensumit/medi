@@ -61,6 +61,9 @@
     <string name="medicine_subsitute">Medicine And Substitute</string>
     <string name="read_health">Read Health Articles </string>
     <string name="listen_helth">Listen Health Articles</string>
+    <string name="health_tools">Health Tools</string>
+    <string name="symptom_checker">Symptom Checker</string>
+    <string name="personify">Personify</string>
 
 
 
