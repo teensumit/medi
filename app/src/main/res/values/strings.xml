@@ -64,7 +64,7 @@
     <string name="health_tools">Health Tools</string>
     <string name="symptom_checker">Symptom Checker</string>
     <string name="personify">Personify</string>
-<<<<<<< HEAD
+
     <string name="camera">Camera</string>
     <string name="saved_prescriptions">Saved\nPrescriptions</string>
     <string name="gallery">Gallery</string>
@@ -97,7 +97,6 @@
     <string name="submit">SUBMIT</string>
 
 
-=======
  <!--  you part -->
     <string name="number">1234567896</string>
     <string name="my_order">My Order</string>
@@ -110,5 +109,5 @@
     <string name="e_wallet">e-Wallet</string>
     <string name="change_password">Change Password</string>
     <string name="logout">LOGOUT</string>
->>>>>>> 37d7d36 (you profile update)
+
 </resources>
