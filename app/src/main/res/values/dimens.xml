@@ -5,8 +5,8 @@
 
     <dimen name="text_extra_large">18sp</dimen>
     <dimen name="text_extra_small">10sp</dimen>
-    <dimen name="text_large">16sp</dimen>
     <dimen name="text_mega">24sp</dimen>
+    <dimen name="text_large">16sp</dimen>
     <dimen name="text_mid">14sp</dimen>
     <dimen name="text_small">12sp</dimen>
     <dimen name="text_super_extra_small">8sp</dimen>

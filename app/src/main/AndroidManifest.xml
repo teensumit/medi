@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SwaasthyaSetu">
-        <activity android:name=".cart.CartActivity"/>
+        <activity android:name=".home.util.OrderByPrescctivity"></activity>
+        <activity android:name=".home.util.AllMedicineActivity" />
+        <activity android:name=".cart.CartActivity" />
         <activity android:name=".notify.NotifyActivity" />
         <activity
             android:name=".auth.ui.login.LoginActivity"
@@ -29,6 +31,7 @@
             android:theme="@style/Theme.SwaasthyaSetu.full">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

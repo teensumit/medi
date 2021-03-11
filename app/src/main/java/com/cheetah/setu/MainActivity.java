@@ -17,10 +17,12 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.cheetah.setu.account.ProfileFragment;
 import com.cheetah.setu.cart.CartActivity;
 import com.cheetah.setu.home.Home;
+import com.cheetah.setu.home.util.OrderByPrescctivity;
 import com.cheetah.setu.main.Func;
 import com.cheetah.setu.notify.NotifyActivity;
 import com.cheetah.setu.order.OrderFragment;
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements
 
     FloatingActionButton floatingActionButton;
 
+    Button check;
+
     int CALLREQUEST = 12;
 
     @Override
@@ -55,9 +59,19 @@ public class MainActivity extends AppCompatActivity implements
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
+        navigationView.setNavigationItemSelectedListener(this);
+
         materialToolbar = findViewById(R.id.material_toobar);
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
         floatingActionButton = findViewById(R.id.fab);
+        check = findViewById(R.id.check);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, OrderByPrescctivity.class);
+                startActivity(intent);
+            }
+        });
         floatingActionButton.setOnClickListener(this);
         materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,9 +183,81 @@ public class MainActivity extends AppCompatActivity implements
         return super.onKeyDown(keyCode, event);
     }
 
+     @SuppressLint("NonConstantResourceId")
      @Override
      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+        switch (item.getItemId()){
+            case R.id.n_order_medicine:
+                Func.showToast(MainActivity.this, "Order Medicine");
+                return true;
+            case R.id.n_order_by_prescription:
+                Func.showToast(MainActivity.this, "Order By Prescription");
+                return true;
+            case R.id.n_reorder_medicine:
+                Func.showToast(MainActivity.this, "n_reorder_medicine");
+                return true;
+            case R.id.n_household_supplies:
+                Func.showToast(MainActivity.this, "n_household_supplies");
+                return true;
+            case R.id.n_health_record:
+                Func.showToast(MainActivity.this, "n_health_record");
+                return true;
+            case R.id.n_buy_again:
+                Func.showToast(MainActivity.this, "n_buy_again");
+                return true;
+            case R.id.n_my_lab_booking:
+                Func.showToast(MainActivity.this, "n_my_lab_booking");
+                return true;
+            case R.id.n_order:
+                Func.showToast(MainActivity.this, "n_order");
+                return true;
+            case R.id.n_return:
+                Func.showToast(MainActivity.this, "n_return");
+                return true;
+            case R.id.n_review_products:
+                Func.showToast(MainActivity.this, "n_review_products");
+                return true;
+            case R.id.n_rate_us:
+                Func.showToast(MainActivity.this, "n_rate_us");
+                return true;
+            case R.id.n_request_a_product:
+                Func.showToast(MainActivity.this, "n_request_a_product");
+                return true;
+            case R.id.n_Feedback:
+                Func.showToast(MainActivity.this, "n_Feedback");
+                return true;
+            case R.id.n_share_in:
+                Func.showToast(MainActivity.this, "n_share_in");
+                return true;
+            case R.id.n_offer_products:
+                Func.showToast(MainActivity.this, "n_offer_products");
+                return true;
+            case R.id.n_legal_about:
+                Func.showToast(MainActivity.this, "n_legal_about");
+                return true;
+            case R.id.n_privacy_policy:
+                Func.showToast(MainActivity.this, "n_privacy_policy");
+                return true;
+            case R.id.n_disclaimer:
+                Func.showToast(MainActivity.this, "n_disclaimer");
+                return true;
+            case R.id.n_t_and_c:
+                Func.showToast(MainActivity.this, "n_t_and_c");
+                return true;
+            case R.id.n_about_us:
+                Func.showToast(MainActivity.this, "n_about_us");
+                return true;
+            case R.id.n_delivery:
+                Func.showToast(MainActivity.this, "n_delivery");
+                return true;
+            case R.id.n_faq:
+                Func.showToast(MainActivity.this, "n_faq");
+                return true;
+            case R.id.n_return_cancellation:
+                Func.showToast(MainActivity.this, "n_return_cancellation");
+                return true;
+        }
          return false;
      }
 

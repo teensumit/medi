@@ -64,7 +64,36 @@
     <string name="health_tools">Health Tools</string>
     <string name="symptom_checker">Symptom Checker</string>
     <string name="personify">Personify</string>
-
+    <string name="camera">Camera</string>
+    <string name="saved_prescriptions">Saved\nPrescriptions</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload_prescription_via_whatsapp">Upload Prescription Via Whatsapp.</string>
+    <string name="_91_99xxxxxxxx">+91–99xxxxxxxx</string>
+    <string name="valid_prescription_guide">
+        <b>Valid Prescription Guide</b> \n
+        &#8226; Supported files type: <b>jpg, jpeg, png, pdf</b> \n
+        &#8226; Images and pdf cannot be uploaded at the same time \n
+        &#8226; Maximum allowed file size: <b>5mb</b> \n
+        &#8226; Maximum image: <b>4</b> for each upload \n
+        &#8226; Maximum pdf file: <b>1</b> for each upload \n
+        &#8226; Avoid blurred image \n
+        &#8226; Prescription uploaded is subject to verification \n
+    </string>
+    <string name="prescription_protection">
+        Your uploaded prescription is secure &amp; private. Only a pharmacist will review it.
+    </string>
+    <string name="check">Check</string>
+    <string name="order_note">Order Note</string>
+    <string name="preferred_contact_number_optional">Preferred Contact Number (optional)</string>
+    <string name="swaasthya_setu_communi">
+        Swaasthya Setu is a communication medium. All orders are accepted and fulfilled by independent licensed
+        chemist subject to verification of Valid Prescription by the said chemist By accepting Terms and Conditions
+        to use this Technology Service, you hereby confirm that you are placing order only for fulfillment of valid prescription.
+    </string>
+    <string name="hereby_declare">
+        I hereby declare that I have placed this order for fulfillment of valid prescription. I agree to all the terms and conditions.
+    </string>
+    <string name="submit">SUBMIT</string>
 
 
 </resources>
