@@ -11,6 +11,7 @@
 
 
         <LinearLayout
+            android:id="@+id/health_records"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -46,6 +47,7 @@
         <!-- Diet clint-->
 
         <LinearLayout
+            android:id="@+id/diet_clinic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -80,6 +82,7 @@
             android:background="@color/border"/>
         <!--  DNAVITY-->
         <LinearLayout
+            android:id="@+id/dnavite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -113,6 +116,7 @@
             android:background="@color/border"/>
         <!--  Genric-->
         <LinearLayout
+            android:id="@+id/generic_medicines"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -146,6 +150,7 @@
             android:background="@color/border"/>
         <!-- consuilt-->
         <LinearLayout
+            android:id="@+id/consult_doctor_online"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -179,6 +184,7 @@
             android:background="@color/border"/>
         <!--  Medicinne-->
         <LinearLayout
+            android:id="@+id/medicine_and_substitute"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -212,6 +218,7 @@
             android:background="@color/border"/>
         <!--Read Helth-->
         <LinearLayout
+            android:id="@+id/read_health_articles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -245,6 +252,7 @@
             android:background="@color/border"/>
         <!--Listen helth-->
         <LinearLayout
+            android:id="@+id/listen_health_articles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -278,6 +286,7 @@
             android:background="@color/border"/>
         <!--Health tools-->
         <LinearLayout
+            android:id="@+id/health_tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -287,7 +296,7 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="#f00"
+                android:src="@drawable/ic_health_tools"
                 android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -311,6 +320,7 @@
             android:background="@color/border"/>
         <!--Symptom-->
         <LinearLayout
+            android:id="@+id/symptom_checker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -344,6 +354,7 @@
             android:background="@color/border"/>
         <!--Personify-->
         <LinearLayout
+            android:id="@+id/personify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -353,7 +364,7 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="#f00"
+                android:src="@drawable/ic_personify"
                 android:contentDescription="@string/imageview"/>
             <TextView
                 android:layout_width="wrap_content"
